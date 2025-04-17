@@ -125,57 +125,47 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
-    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url('../images/Store_Front.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/Store_Front.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.7);
-    z-index: -1;
+    position: relative;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
-    padding: 2rem;
-    background: none;
-    max-width: 800px;
-    margin: 0 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 2.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     color: #fff;
-    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
-    color: #fff;
+    color: var(--color-accent);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .cta-button {
     display: inline-block;
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
     background-color: var(--color-primary);
     color: var(--color-white);
     text-decoration: none;
@@ -184,14 +174,13 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border: 2px solid var(--color-white);
 }
 
 .cta-button:hover {
-    background-color: var(--color-white);
-    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    color: var(--color-white);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
 }
 
 /* Menu Section */
@@ -404,23 +393,17 @@ footer {
         right: 0;
     }
 
-    .hero::before {
-        background-position: center;
-        transform: scale(1.1);
-    }
-
     .hero-content {
-        width: 90%;
-        padding: 1.5rem;
-        margin: 0 auto;
+        width: 85%;
+        padding: 2rem;
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .hero p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
