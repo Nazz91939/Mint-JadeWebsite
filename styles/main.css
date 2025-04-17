@@ -126,8 +126,8 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('/images/Store_Front.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('../images/Store_Front.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,12 +138,18 @@ body {
 
 .hero-content {
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 1;
 }
 
 .hero h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: #fff;
@@ -385,6 +391,11 @@ footer {
 
     .nav-active {
         right: 0;
+    }
+
+    .hero-content {
+        width: 85%;
+        padding: 1.5rem;
     }
 
     .hero h1 {
