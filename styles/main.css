@@ -126,8 +126,8 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('../images/Store_Front.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url('/images/Store_Front.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,30 +137,24 @@ body {
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
-    padding: 2.5rem;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     margin-bottom: 2rem;
     color: var(--color-accent);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .cta-button {
@@ -174,7 +168,6 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .cta-button:hover {
@@ -392,11 +385,6 @@ footer {
 
     .nav-active {
         right: 0;
-    }
-
-    .hero-content {
-        width: 85%;
-        padding: 2rem;
     }
 
     .hero h1 {
