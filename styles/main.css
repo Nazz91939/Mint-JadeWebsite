@@ -126,14 +126,20 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('../images/Store_Front.jpg') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('../images/Store_Front.jpg') center/cover no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -387,6 +393,21 @@ footer {
 
     .nav-active {
         right: 0;
+    }
+
+    .hero {
+        background-position: center center;
+        background-attachment: scroll;
+        height: 100vh;
+    }
+
+    .hero-content {
+        width: 90%;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        backdrop-filter: blur(8px);
+        margin: 0 auto;
     }
 
     .hero h1 {
