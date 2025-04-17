@@ -127,7 +127,7 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('/images/Store_Front.jpg') center/cover no-repeat;
+                url('../images/Store_Front.jpg') center/cover no-repeat fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,9 +138,11 @@ body {
 
 .hero-content {
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     backdrop-filter: blur(5px);
+    max-width: 800px;
+    margin: 0 2rem;
 }
 
 .hero h1 {
