@@ -138,6 +138,7 @@ body {
     margin: 0;
     padding-top: 60px;
     overflow: hidden;
+    background-color: black; /* Add this to match the overlay color */
 }
 
 .hero::before {
@@ -145,10 +146,13 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('../images/Store_Front.jpg') center/cover no-repeat;
+                url('../images/Store_Front.jpg') center/contain no-repeat;
+    background-color: black; /* Add this to ensure no transparent edges */
     z-index: -1;
 }
 
