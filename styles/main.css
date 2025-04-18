@@ -6,12 +6,12 @@
 }
 
 :root {
-    --color-primary: #8B4513;
-    --color-secondary: #D2691E;
-    --color-accent: #DEB887;
-    --color-background: #FFF8DC;
-    --color-text: #3E2723;
-    --color-text-light: #5D4037;
+    --color-primary: #00A896; /* Jade green */
+    --color-secondary: #02C39A; /* Mint green */
+    --color-accent: #F0F3BD; /* Light cream accent */
+    --color-background: #F8F9F8; /* Off-white background */
+    --color-text: #05668D; /* Deep teal text */
+    --color-text-light: #028090; /* Medium teal text */
     --color-white: #FFFFFF;
 }
 
@@ -29,7 +29,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 250, 240, 0.95); /* Floral white with opacity */
+    background: rgba(248, 249, 248, 0.95); /* Using background color with opacity */
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -229,11 +229,11 @@ body {
     background: var(--color-white);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(139, 69, 19, 0.1);
+    box-shadow: 0 3px 10px rgba(2, 195, 154, 0.1);
 }
 
 .menu-category h3 {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
     font-family: 'Playfair Display', serif;
@@ -496,7 +496,7 @@ footer {
 }
 
 .menu-item h4 {
-    color: var(--color-secondary);
+    color: var(--color-text);
 }
 
 .contact-form button {
