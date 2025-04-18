@@ -6,13 +6,13 @@
 }
 
 :root {
-    --color-primary: #8B4513; /* Dark coffee brown */
-    --color-secondary: #D2691E; /* Light coffee brown */
-    --color-accent: #DEB887; /* Burlywood - creamy coffee */
-    --color-background: #FFF8DC; /* Cornsilk - light cream */
-    --color-text: #3E2723; /* Dark brown text */
-    --color-text-light: #5D4037; /* Medium brown text */
-    --color-white: #FFFAF0; /* Floral white */
+    --color-primary: #8B4513;
+    --color-secondary: #D2691E;
+    --color-accent: #DEB887;
+    --color-background: #FFF8DC;
+    --color-text: #3E2723;
+    --color-text-light: #5D4037;
+    --color-white: #FFFFFF;
 }
 
 body {
