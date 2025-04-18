@@ -138,8 +138,7 @@ body {
     margin: 0;
     padding-top: 60px;
     overflow: hidden;
-    background: #000000 url('/images/Store_Front.jpg') center/cover no-repeat;
-    will-change: background-image;
+    background: url('../images/Store_Front.jpg') center/cover no-repeat;
 }
 
 .hero::before {
@@ -151,7 +150,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -439,10 +438,7 @@ footer {
         height: -webkit-fill-available;
         padding: 0;
         margin: 0;
-        background: #000000 url('/images/Store_Front.jpg') center/100% 100% no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background: url('../images/Store_Front.jpg') center/contain no-repeat;
     }
 
     .hero-content {
